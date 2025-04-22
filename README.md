@@ -54,6 +54,19 @@ We observed that selectively applying LoRA led to higher accuracy at a lower par
 
 ---
 
+## Training Progress
+
+### Training Loss vs Epochs
+![Training Loss Curve](training.png)
+
+### Validation Metrics
+![Validation Metrics](validation.png)
+
+### Predictions Visualization
+![Test Predictions](predictions.png)
+
+---
+
 ## Key Observations
 - Validation accuracy alone does not always guarantee the best model for inference. Careful evaluation across different metrics is necessary.
 - Selective layer adaptation significantly improved model efficiency.
