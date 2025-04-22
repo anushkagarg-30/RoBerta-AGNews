@@ -33,12 +33,6 @@ Key techniques and configurations used:
   - Student: Rank=16, alpha=8 setup.
 - **Targeted Adaptation**:  
   - LoRA applied selectively to layers 0, 1, 5, 10, and 11 (self-attention query/key projections and dense output layers).
-- **Training Configuration**:
-  - Optimizer: AdamW
-  - Scheduler: Cosine learning rate schedule
-  - Learning Rate: 2e-5
-  - Batch Size: 32
-  - Epochs: 10
 
 Libraries:
 - [Hugging Face Transformers](https://github.com/huggingface/transformers)
@@ -80,22 +74,17 @@ We observed that selectively applying LoRA led to higher accuracy at a lower par
     git clone https://github.com/nishant-ai/BERT-tuned-AGNews.git
     cd BERT-tuned-AGNews
     ```
-2. Install the required packages:
-    ```bash
-    pip install -r requirements.txt
-    ```
-3. Train or evaluate:
+    
+2. Train or evaluate:
     - See provided notebooks and scripts in the repository.
 
-4. Check `inference_output-submitted-final.csv` for final model predictions.
+3. Check `inference_output-submitted-final.csv` for final model predictions.
 
 ---
 
 ## Repository Contents
-- `train.py`: Training script for LoRA finetuning.
-- `distillation.py`: Teacher-student distillation implementation.
-- `submission/`: Contains final inference output for submission.
-- `notebooks/`: Exploratory and tuning notebooks.
+- `submission/`: Exploratory and tuning notebooks.
+- `notebooks/`: Starter Notebook and Initial resources.
 - `README.md`: Project overview (this file).
 
 ---
@@ -104,17 +93,4 @@ We observed that selectively applying LoRA led to higher accuracy at a lower par
 - Nishant Sharma - [ns6287@nyu.edu](mailto:ns6287@nyu.edu)
 - Rahul Mallidi - [rm7020@nyu.edu](mailto:rm7020@nyu.edu)
 - Anushka Garg - [ag9012@nyu.edu](mailto:ag9012@nyu.edu)
-
----
-
-## References
-1. Liu et al., RoBERTa: A Robustly Optimized BERT Pretraining Approach, 2019.
-2. Devlin et al., BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding, 2019.
-3. Hu et al., LoRA: Low-Rank Adaptation of Large Language Models, 2021.
-4. Vaswani et al., Attention Is All You Need, 2017.
-5. Houlsby et al., Parameter-efficient Transfer Learning for NLP, 2019.
-6. Li and Liang, Prefix-Tuning: Optimizing Continuous Prompts for Generation, 2021.
-7. Xu et al., Parameter-Efficient Fine-Tuning Methods for Pretrained Language Models: A Critical Review and Assessment, 2023.
-
----
 
