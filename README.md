@@ -33,6 +33,8 @@ Key techniques and configurations used:
   - Student: Rank=16, alpha=8 setup.
 - **Targeted Adaptation**:  
   - LoRA applied selectively to layers 0, 1, 5, 10, and 11 (self-attention query/key projections and dense output layers).
+- **Trainable Parameters**:
+  - 796,420  
 
 Libraries:
 - [Hugging Face Transformers](https://github.com/huggingface/transformers)
